@@ -4,8 +4,11 @@ Build a members-only portal with signup, login, and logout using Supabase Auth.
 
 ## Quick Start
 
+**1. Fork this repo** — Click the **Fork** button at the top right of this page.
+
+**2. Clone your fork:**
 ```bash
-git clone https://github.com/LoisBN/fpp-members-auth.git
+git clone https://github.com/YOUR-GITHUB-USERNAME/fpp-members-auth.git
 cd fpp-members-auth
 npm install
 ```
