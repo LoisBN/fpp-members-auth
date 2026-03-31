@@ -1,4 +1,5 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { ToastProvider } from "~/components/Toast";
 import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -10,8 +11,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-gray-50 text-gray-900 min-h-screen">
-        {children}
+      <body className="bg-gray-50 text-gray-900 min-h-screen antialiased">
+        <ToastProvider>{children}</ToastProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
